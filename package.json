@@ -15,7 +15,9 @@
     "sqlite3": "^5.1.7"
   },
   "scripts": {
-    "start": "cds-serve"
+    "start": "cds-serve",
+    "deploy": "cds deploy --to sqlite:products.db"
+
   },
   "cds": {
     "requires": {
