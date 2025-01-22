@@ -1,7 +1,7 @@
 using capdeployement as my from '../db/schema';
 
 service ProductsService{
-    entity Products as projection on my.Products;
-    entity Suppliers as projection on my.Suppliers;
-    entity Orders as projection on my.Orders;
+    @readonly entity Products as projection on my.Products;
+    @readonly entity Suppliers as projection on my.Suppliers;
+    @readonly entity Orders as projection on my.Orders;
 }
