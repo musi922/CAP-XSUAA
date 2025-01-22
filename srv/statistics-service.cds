@@ -1,7 +1,7 @@
 using capdeployement as my from '../db/schema';
 
 service Statistics {
-    @readonly
+    @readonly 
     entity OrdersInfo as projection on my.Orders excluding{
         createdAt,
         createdBy,
@@ -9,6 +9,7 @@ service Statistics {
         modifiedBy,
         product
     }
+    entity Consumers as projection on my.Consumers;
     
 
 }

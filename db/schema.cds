@@ -21,3 +21,7 @@ entity Orders: cuid,managed {
        product: Association to Products;
        quantity: Integer
 }
+entity Consumers : cuid {
+    name: String
+    
+}
