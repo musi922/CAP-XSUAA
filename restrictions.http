@@ -2,4 +2,4 @@
 GET http://localhost:4004/odata/v4/products/Products?$expand=supplier
 
 ###
-GET http://localhost:4004/odata/v4/products/Suppliers 
+GET http://localhost:4004/odata/v4/products/Suppliers?$expand=products
