@@ -21,4 +21,3 @@ entity Orders: cuid,managed {
        product: Association to Products;
        quantity: Integer
 }
-
