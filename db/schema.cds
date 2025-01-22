@@ -1,7 +1,7 @@
 namespace capdeployement;
 
 entity Products {
-    key ID: UUID;
+    key ID: Integer;
     name: String;
     price: Integer;
     stock: Integer;
@@ -11,7 +11,7 @@ entity Products {
 
 
 entity Suppliers{
-    key ID: UUID;
+    key ID: Integer;
     name: String;
     products : Association to many Products on products.supplier = $self; //get products where prodducts.supplier = suplier.id
 }
